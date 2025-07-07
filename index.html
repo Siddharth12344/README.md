@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Siddharth Ravirala - Portfolio</title>
     <style>
         body {
@@ -23,7 +23,10 @@
 
         nav {
             text-align: center;
-            margin-top: 10px;
+            margin: 10px 0;
+            background-color: #ffffff;
+            padding: 10px 0;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
@@ -31,6 +34,11 @@
             text-decoration: none;
             color: #4CAF50;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #388E3C;
         }
 
         section {
@@ -44,7 +52,17 @@
             padding: 15px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.02);
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #2E7D32;
         }
 
         footer {
@@ -65,6 +83,17 @@
         .center {
             text-align: center;
         }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
@@ -76,45 +105,59 @@
     </header>
 
     <nav>
-        <a href="#about">About Me: 
-I’m a SQL and Power BI Developer with over 2 years of experience in data analysis, ETL processes, and business intelligence solutions. I specialize in developing interactive dashboards and reports using Power BI, optimizing database performance, and implementing complex data models. I have extensive hands-on experience with RDBMS platforms like SQL Server, Oracle, and MySQL, and cloud technologies such as Azure and Google Cloud Platform. I’m passionate about leveraging data to drive business insights and collaborating with teams to deliver high-quality data solutions.
-</a>
-        <a href="#projects">Projects: I have developed 15+ interactive Power BI dashboards and reports from multiple data sources.</a>
-        <a href="#contact">Contact: (908)-666-3382</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <section id="about">
         <div class="center">
-            <img src="MyDP.jpeg" alt="Your Photo">
+            <img src="MyDP.jpeg" alt="Siddharth Ravirala's Photo" />
         </div>
         <h2>About Me</h2>
-        <p>Hello! I am a passionate Data Analyst and Power BI Developer with experience in transforming data into valuable insights. I specialize in SQL, Power BI, ETL processes, and creating interactive dashboards.</p>
+        <p>
+            I’m a SQL and Power BI Developer with over 2 years of experience in data analysis, ETL processes, and business intelligence solutions.
+            I specialize in developing interactive dashboards and reports using Power BI, optimizing database performance, and implementing complex data models.
+            I have hands-on experience with SQL Server, Oracle, MySQL, and cloud technologies like Azure and Google Cloud Platform.
+        </p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
 
         <div class="project">
-            <h3>Project 1: Sales Dashboard</h3>
-            <p>Developed a Power BI dashboard for real-time sales tracking and performance analysis using SQL Server as the backend.</p>
+            <h3><a href="project1.html" target="_blank">Project 1: Sales Dashboard</a></h3>
+            <p>
+                Developed a Power BI dashboard for real-time sales tracking and performance analysis using SQL Server as the backend.
+                <br />
+                <em>Click the title to view full details</em>.
+            </p>
         </div>
 
         <div class="project">
             <h3>Project 2: ETL Data Pipeline</h3>
-            <p>Built an end-to-end ETL pipeline using SSIS to extract, transform, and load data from various sources into a centralized data warehouse.</p>
+            <p>
+                Built an end-to-end ETL pipeline using SSIS to extract, transform, and load data from various sources into a centralized data warehouse.
+            </p>
         </div>
 
         <div class="project">
             <h3>Project 3: Reinsurance Reporting</h3>
-            <p>Created custom reports for the Reinsurance industry leveraging Power BI, SQL, and DAX to provide deep business insights.</p>
+            <p>
+                Created custom reports for the Reinsurance industry leveraging Power BI, SQL, and DAX to provide deep business insights.
+            </p>
         </div>
-
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: siddharthravirala99@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/siddharth-ravirala-0393861b0/" target="_blank">linkedin.com/in/siddharth-ravirala-0393861b0</a></p>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/siddharth-ravirala-0393861b0/" target="_blank">
+                linkedin.com/in/siddharth-ravirala-0393861b0
+            </a>
+        </p>
         <p>Phone: +1-908-666-3382</p>
     </section>
 
